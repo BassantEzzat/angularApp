@@ -1,0 +1,11 @@
+.notfound h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(44, 62, 80);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.notfound i {
+    font-size: 45px;
+}

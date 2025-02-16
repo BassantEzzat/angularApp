@@ -1,0 +1,18 @@
+input.form-control:focus {
+    box-shadow: none;
+}
+
+label {
+    color: #1abc9c;
+    margin-bottom: 7px;
+    transition: 0.6s top;
+}
+
+.__top {
+    top: 40px !important;
+}
+
+.mybtn button {
+    background-color: #1abc9c;
+    border-radius: 7px;
+}

@@ -1,0 +1,27 @@
+<section class="portfolio py-4">
+    <div class="portfolio-title">
+        <h1 class="text-uppercase 
+        title-color fw-bold text-center">portfolio component</h1>
+        <div class="text-center">
+            <div class="line-star bg-color"></div>
+            <i class="fa-solid fa-star 
+            px-3 title-color"></i>
+            <div class="line-star bg-color"></div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row g-4">
+            @for (item of imgItems; track $index) {
+            <div class="col-md-4 cursor-pointer">
+                <div (click)="isHidden = false ; modelImg = item " class="card border-0">
+                    <img class="card-img-top" [src]="item" alt="title">
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    <div (click)="hideModel( $event.target , elementImg)" [class.d-none]="isHidden"
+        class="item position-fixed start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+        <img #elementImg [src]="modelImg" alt="model image">
+    </div>
+</section>

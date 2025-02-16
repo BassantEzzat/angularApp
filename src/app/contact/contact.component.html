@@ -1,0 +1,37 @@
+<section class="contact p-3">
+    <div class="container p-5">
+        <div class="contact-title">
+            <h1 class="text-uppercase 
+        title-color fw-bold text-center">conatct section</h1>
+            <div class="text-center">
+                <div class="line-star bg-color"></div>
+                <i class="fa-solid fa-star 
+            px-3 title-color"></i>
+                <div class="line-star bg-color"></div>
+            </div>
+        </div>
+        <form class="w-50 mx-auto mt-4">
+            <label [class.__top]="!userName" for="userName" class="position-relative top-0">userName : </label>
+            <input id="userName" type="text" class="form-control border-0 border-bottom py-3 position-relative"
+                placeholder="userName" name="userName" [(ngModel)]="userName">
+
+            <label [class.__top]="!userAge" for="userAge" class="position-relative top-0">userAge : </label>
+            <input id="userAge" type="text" class="form-control border-0 border-bottom py-3 position-relative"
+                placeholder="userAge" name="userAge" [(ngModel)]="userAge">
+
+            <label [class.__top]="!userEmail" for="userEmail" class="position-relative top-0">userEmail : </label>
+            <input id="userEmail" type="email" class="form-control border-0 border-bottom py-3 position-relative"
+                placeholder="userEmail" name="userEmail" [(ngModel)]="userEmail">
+
+            <label [class.__top]="!userPassword" for="userPassword" class="position-relative top-0">userPassword :
+            </label>
+            <input id="userPassword" type="password" class="form-control border-0 border-bottom py-3 position-relative"
+                placeholder="userPassword" name="userPassword" [(ngModel)]="userPassword">
+
+            <div class="mybtn mt-4">
+                <button class="text-white border-0 py-2 px-3"> send message</button>
+            </div>
+        </form>
+
+    </div>
+</section>

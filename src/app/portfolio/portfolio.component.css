@@ -1,0 +1,7 @@
+.item {
+    z-index: 9999;
+}
+
+.item img {
+    width: 600px;
+}
